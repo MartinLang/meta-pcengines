@@ -11,6 +11,7 @@ IMAGE_INSTALL_append = " \
   lvm2 \
   bridge-utils \
   seabios \
+  hvm-create \
   "
 
 build_syslinux_cfg () {
@@ -20,5 +21,5 @@ build_syslinux_cfg () {
 	echo "PROMPT 1" >> ${SYSLINUX_CFG}
 	echo "LABEL boot" >> ${SYSLINUX_CFG}
 	echo "  KERNEL mboot.c32" >> ${SYSLINUX_CFG}
-	echo "  APPEND /xen.gz dom0_mem=512M ${SYSLINUX_XEN_ARGS} --- /${KERNEL_IMAGETYPE} ${SYSLINUX_KERNEL_ARGS} --- /initrd" >> ${SYSLINUX_CFG}
+	echo "  APPEND /xen.gz dom0_mem=512M,max:512M ${SYSLINUX_XEN_ARGS} --- /${KERNEL_IMAGETYPE} ${SYSLINUX_KERNEL_ARGS} --- /initrd" >> ${SYSLINUX_CFG}
 }
