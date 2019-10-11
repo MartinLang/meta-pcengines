@@ -1,24 +1,5 @@
 require recipes-extended/images/xen-image-minimal.bb
 
-IMAGE_INSTALL_append = " \
-  kernel-modules \
-  xen-misc \
-  tpm2-tools \
-  tpm2-abrmd \
-  tpm2-tss \
-  libtss2 \
-  libtss2-mu \
-  libtss2-tcti-device \
-  libtss2-tcti-mssim \
-  grub \
-  lvm2 \
-  bridge-utils \
-  seabios \
-  openvswitch \
-  dhcp-client \
-  netcat \
-  "
-
 build_syslinux_cfg () {
 	echo "ALLOWOPTIONS 1" > ${SYSLINUX_CFG}
 	echo "DEFAULT boot" >> ${SYSLINUX_CFG}
