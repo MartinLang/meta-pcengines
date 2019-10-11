@@ -1,6 +1,0 @@
-[Match]
-Name=en* eth*
-KernelCommandLine=!nfsroot
-
-[Network]
-Bridge=xenbr0
