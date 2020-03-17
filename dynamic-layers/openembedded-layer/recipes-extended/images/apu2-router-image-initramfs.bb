@@ -1,6 +1,6 @@
 require dynamic-layers/openembedded-layer/recipes-extended/images/apu2-image-initramfs.bb
 
-IMAGE_FSTYPES = "cpio.gz"
+IMAGE_FSTYPES += "cpio.gz"
 
 IMAGE_INSTALL_append = " \
     crda \
