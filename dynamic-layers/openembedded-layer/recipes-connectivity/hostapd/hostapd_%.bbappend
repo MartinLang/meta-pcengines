@@ -1,6 +1,7 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
 SRC_URI += "file://hostapd.conf"
+SRC_URI += "file://hostapd-ac.conf"
 
 do_install_append() {
     rm ${D}${sysconfdir}/hostapd.conf
