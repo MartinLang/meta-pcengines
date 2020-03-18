@@ -4,6 +4,7 @@ SRC_URI += " \
     file://edac.cfg \
     file://wdt-sp5100-tco.cfg \
     file://athxk.cfg \
+    file://smp.cfg \
 "
 
 # base on generic config from:
