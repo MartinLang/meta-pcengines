@@ -1,0 +1,6 @@
+# Bridge the other 2 remaining ports into one toe be used for LAN
+[Match]
+Name=enp2s0 enp3s0
+
+[Network]
+Bridge=br0
