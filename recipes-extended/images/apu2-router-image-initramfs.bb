@@ -9,6 +9,8 @@ IMAGE_INSTALL_append = " \
     hostapd \
     iperf3 \
     iw \
-    linux-firmware-ath9k \
     linux-firmware-ath10k \
+    tpm2-tools \
+    tpm2-abrmd \
+    tpm2-tss \
     "
