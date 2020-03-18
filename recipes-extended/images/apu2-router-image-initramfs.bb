@@ -1,9 +1,11 @@
-require dynamic-layers/openembedded-layer/recipes-extended/images/apu2-image-initramfs.bb
+require recipes-extended/images/apu2-image-initramfs.bb
 
 IMAGE_FSTYPES += "cpio.gz"
 
 IMAGE_INSTALL_append = " \
+    apu2-router-bridges \
     crda \
+    dnsmasq \
     hostapd \
     iperf3 \
     iw \
