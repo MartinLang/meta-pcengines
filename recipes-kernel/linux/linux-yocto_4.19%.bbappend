@@ -3,6 +3,7 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/linux-yocto:"
 SRC_URI += " \
     file://edac.cfg \
     file://athxk.cfg \
+    file://smp.cfg \
 "
 
 # base on generic config from:
