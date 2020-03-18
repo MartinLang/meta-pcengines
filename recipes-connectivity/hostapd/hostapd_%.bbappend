@@ -8,3 +8,5 @@ do_install_append() {
     install -m 0644 ${WORKDIR}/hostapd.conf ${D}${sysconfdir}
     install -m 0644 ${WORKDIR}/hostapd-ac.conf ${D}${sysconfdir}
 }
+
+SYSTEMD_AUTO_ENABLE_${PN} = "enable"
