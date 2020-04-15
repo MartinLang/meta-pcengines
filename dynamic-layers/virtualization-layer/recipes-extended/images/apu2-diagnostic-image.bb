@@ -1,4 +1,4 @@
-require dynamic-layers/virtualization-layer/recipes-extended/images/docker-image-minimal.bb
+require docker-image-minimal.bb
 
 IMAGE_INSTALL_append = " \
     flashrom \
