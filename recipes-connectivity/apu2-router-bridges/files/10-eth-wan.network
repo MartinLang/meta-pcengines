@@ -1,0 +1,6 @@
+# Take the Ethernet port closest to the console port for WAN
+[Match]
+Name=enp1s0
+
+[Network]
+DHCP=yes
