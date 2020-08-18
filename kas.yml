@@ -27,7 +27,7 @@ repos:
 
   meta-security:
     url: https://git.yoctoproject.org/git/meta-security
-    refspec: c74cc97641fd93e0e7a4383255e9a0ab3deaf9d7
+    refspec: 982a29bbb7ef32475aea7c4bb56c620065a50927
     layers:
       meta-tpm:
 
