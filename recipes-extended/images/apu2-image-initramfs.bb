@@ -5,6 +5,7 @@ IMAGE_INSTALL_append = " \
   gnupg \
   wget \
   ca-certificates \
+  kernel-modules \
   "
 
 IMAGE_FEATURES_append = " ssh-server-openssh"
