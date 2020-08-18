@@ -6,6 +6,7 @@ IMAGE_INSTALL_append = " \
   kernel-modules \
   wget \
   ca-certificates \
+  kernel-modules \
   "
 
 IMAGE_FEATURES_append = " ssh-server-openssh"
