@@ -64,4 +64,4 @@ KERNEL_MODULE_AUTOLOAD_pce-xen += " \
     xen-blkback \
 "
 
-WKS_FILES ?= "directdisk-grub-legacy.wks"
+IMAGE_INSTALL_append = " grub"
