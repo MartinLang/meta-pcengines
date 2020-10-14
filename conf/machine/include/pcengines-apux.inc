@@ -67,3 +67,5 @@ KERNEL_MODULE_AUTOLOAD_pce-xen += " \
     xen-pciback \
     xen-blkback \
 "
+
+IMAGE_INSTALL_append = " grub"
