@@ -113,10 +113,13 @@ class BootimgGrubTbPlugin(SourcePlugin):
         elif os.path.exists(xen_gz_dir):
             initrd = source_params.get('initrd')
 
+
             grub_conf = ""
-            grub_conf += "serial --unit=0 --speed=115200\n"
-            grub_conf += "terminal --timeout=%s serial\n" % bootloader.timeout
+            grub_conf += "serial --unit=0 --speed=115200 --word=8 --parity=no --stop=1\n"
+            grub_conf += "timeout=5\n" % bootloader.timeout
             grub_conf += "default=boot\n"
+            grub_conf += "terminal_input serial\n"
+            grub_conf += "terminal_output serial\n"
             grub_conf += "menuentry 'boot-xen' {\n"
 
             xen = "/xen"
@@ -165,9 +168,11 @@ class BootimgGrubTbPlugin(SourcePlugin):
             initrd = source_params.get('initrd')
 
             grub_conf = ""
-            grub_conf += "serial --unit=0 --speed=115200\n"
-            grub_conf += "terminal --timeout=%s serial\n" % bootloader.timeout
+            grub_conf += "serial --unit=0 --speed=115200 --word=8 --parity=no --stop=1\n"
+            grub_conf += "timeout=5\n" % bootloader.timeout
             grub_conf += "default=boot\n"
+            grub_conf += "terminal_input serial\n"
+            grub_conf += "terminal_output serial\n"
             grub_conf += "menuentry 'boot' {\n"
 
             kernel = "/bzImage"
