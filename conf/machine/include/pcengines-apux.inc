@@ -62,7 +62,7 @@ KERNEL_MODULE_AUTOLOAD_pce-xen += " \
     xen_wdt \
     xen-gntdev \
     xen-gntalloc \
-    en-acpi-processor \
+    xen-acpi-processor \
     xen-pciback \
     xen-blkback \
 "
