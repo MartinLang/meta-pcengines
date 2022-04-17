@@ -6,7 +6,7 @@ repos:
 
   poky:
     url: https://git.yoctoproject.org/git/poky
-    refspec: d0ac956dc2454da252ab718267af0dcf504e6a13
+    refspec: 580532cfd0c23e27a366c074e806fc0b6908b874
     layers:
       meta:
       meta-poky:
@@ -14,7 +14,7 @@ repos:
 
   meta-openembedded:
     url: http://git.openembedded.org/meta-openembedded
-    refspec: e0daf6f8e0c53e388c631b8cdf3d7d8173dcea95
+    refspec: a19d1802b15fe07e9b1e7584ff9af7c33bfe642a
     layers:
       meta-oe:
       meta-networking:
@@ -23,17 +23,17 @@ repos:
 
   meta-virtualization:
     url: https://git.yoctoproject.org/git/meta-virtualization
-    refspec: 062d9f1f4faf2ca8a1fe78b7c7365e6378c15836
+    refspec: bd7511c53b921c9ce4ba2fdb42778ca194ebc3e8
 
   meta-security:
     url: https://git.yoctoproject.org/git/meta-security
-    refspec: 27ddb455543b670097e252ba0d0ad5b7e4101748
+    refspec: fb77606aef461910db4836bad94d75758cc2688c
     layers:
       meta-tpm:
 
   meta-selinux:
     url: https://git.yoctoproject.org/git/meta-selinux
-    refspec: 44d760413920ba440439b8bc7c2a71ca26cd7a2d
+    refspec: f5e5031628fdad9b005e66abeb9259426850403f
 
 bblayers_conf_header:
   standard: |
@@ -43,7 +43,7 @@ bblayers_conf_header:
     LICENSE_FLAGS_WHITELIST = "commercial"
 local_conf_header:
   standard: |
-    CONF_VERSION = "1"
+    CONF_VERSION = "2"
     PACKAGE_CLASSES = "package_rpm"
     SDKMACHINE = "x86_64"
     USER_CLASSES = "buildstats image-prelink"
