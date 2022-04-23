@@ -21,7 +21,7 @@ XSERVER ?= "${XSERVER_X86_BASE} \
             ${XSERVER_X86_FBDEV} \
            "
 
-PREFERRED_VERSION_linux-yocto = "4.19%"
+PREFERRED_VERSION_linux-yocto = "5.10%"
 
 MACHINE_FEATURES += " \
     rtc \
