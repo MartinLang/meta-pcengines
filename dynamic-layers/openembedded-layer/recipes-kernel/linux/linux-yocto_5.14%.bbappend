@@ -19,4 +19,4 @@ KERNEL_FEATURES:remove:pcengines-apux = " \
     features/usb/touchscreen-composite.scc \
 "
 
-COMPATIBLE_MACHINE_pcengines-apux = "pcengines-apux"
+COMPATIBLE_MACHINE:pcengines-apux = "pcengines-apux"
