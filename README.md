@@ -1,8 +1,7 @@
 # WARNING
 
-This is WIP repo is under development. Use it at your own risk.
-If you have use-cases for such thing to be developed, please submit
-an issue or PR with description of your needs / fixes.
+This is WIP repo is under development. Does currently not build. Just updated from branch "honister".
+Use it at your own risk.
 
 # meta-pcengines
 
