@@ -8,7 +8,7 @@ KMACHINE:pcengines-apux = "common-pc-64"
 
 # enable SMP
 KERNEL_FEATURES:append:pcengines-apux = " \
-    cfg/smp.scc \
+    cfg/smp_64.scc \
 "
 
 # disable graphics and Intel CPU/GPU support
