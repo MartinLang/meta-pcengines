@@ -51,7 +51,7 @@ MACHINE_FEATURES:remove = "qemu-usermode"
 APPEND_ADDITIONAL ??= ""
 APPEND += "${APPEND_ADDITIONAL}"
 
-IMAGE_FSTYPES += "ext4"
+IMAGE_FSTYPES += "ext4 hddimg"
 
 IMAGE_OVERHEAD_FACTOR = "1.1"
 
