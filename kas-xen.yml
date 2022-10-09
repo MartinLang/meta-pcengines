@@ -4,6 +4,6 @@ header:
   - kas.yml
 
 distro: pce-xen
-machine: pcengines-apu2
+machine: pcengines-apu
 target:
   - xen-dom0-image

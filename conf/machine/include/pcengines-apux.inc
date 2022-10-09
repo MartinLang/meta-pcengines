@@ -1,8 +1,5 @@
 PREFERRED_PROVIDER_virtual/kernel ?= "linux-yocto"
 
-# provides gcc tune for Family 16h
-require conf/machine/include/tune-dbft3b.inc
-
 MULTILIBS ?= ""
 require conf/multilib.conf
 
@@ -11,10 +8,8 @@ SERIAL_CONSOLES = "115200;ttyUSB0"
 KERNEL_SERIAL_CONSOLE ??= "console=ttyS0,115200n8"
 APPEND += "${KERNEL_SERIAL_CONSOLE}"
 
-MACHINEOVERRIDES =. "amd:amdx86:pcengines-apux:"
 
-# Metadata used by CodeBench for the ADE
-ADE_CB_CPU = "general.cpu.jaguar"
+MACHINEOVERRIDES =. "amd:amdx86:pcengines-apux:"
 
 XSERVER ?= "${XSERVER_X86_BASE} \
             ${XSERVER_X86_EXT} \
