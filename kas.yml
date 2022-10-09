@@ -6,7 +6,8 @@ repos:
 
   poky:
     url: https://git.yoctoproject.org/git/poky
-    refspec: d0ac956dc2454da252ab718267af0dcf504e6a13
+    # kirkstone-4.0.4
+    refspec: d64bef1c7d713b92a51228e5ade945835e5a94a4
     layers:
       meta:
       meta-poky:
@@ -14,7 +15,8 @@ repos:
 
   meta-openembedded:
     url: http://git.openembedded.org/meta-openembedded
-    refspec: e0daf6f8e0c53e388c631b8cdf3d7d8173dcea95
+    # kirkstone
+    refspec: 05dcac98473402d87e0af73bbc2c5a6a840abe93
     layers:
       meta-oe:
       meta-networking:
@@ -23,30 +25,33 @@ repos:
 
   meta-virtualization:
     url: https://git.yoctoproject.org/git/meta-virtualization
-    refspec: 062d9f1f4faf2ca8a1fe78b7c7365e6378c15836
+    # kirkstone
+    refspec: 9482648daf0bb42ff3475e7892542cf99f3b8d48
 
   meta-security:
     url: https://git.yoctoproject.org/git/meta-security
-    refspec: 27ddb455543b670097e252ba0d0ad5b7e4101748
+    # kirkstone
+    refspec: c79262a30bd385f5dbb009ef8704a1a01644528e
     layers:
       meta-tpm:
 
   meta-selinux:
     url: https://git.yoctoproject.org/git/meta-selinux
-    refspec: 44d760413920ba440439b8bc7c2a71ca26cd7a2d
+    # kirkstone
+    refspec: a401f4b2816a0b41ce8d9351542658c721935bcd
 
 bblayers_conf_header:
   standard: |
     POKY_BBLAYERS_CONF_VERSION = "2"
     BBPATH = "${TOPDIR}"
     BBFILES ?= ""
-    LICENSE_FLAGS_WHITELIST = "commercial"
+    LICENSE_FLAGS_ACCEPTED = "commercial"
 local_conf_header:
   standard: |
-    CONF_VERSION = "1"
+    CONF_VERSION = "2"
     PACKAGE_CLASSES = "package_rpm"
     SDKMACHINE = "x86_64"
-    USER_CLASSES = "buildstats image-mklibs image-prelink"
+    USER_CLASSES = "buildstats"
     PATCHRESOLVE = "noop"
   debug-tweaks: |
     EXTRA_IMAGE_FEATURES = "debug-tweaks"
@@ -56,9 +61,9 @@ local_conf_header:
         STOPTASKS,${DL_DIR},1G,100K \
         STOPTASKS,${SSTATE_DIR},1G,100K \
         STOPTASKS,/tmp,100M,100K \
-        ABORT,${TMPDIR},100M,1K \
-        ABORT,${DL_DIR},100M,1K \
-        ABORT,${SSTATE_DIR},100M,1K \
-        ABORT,/tmp,10M,1K"
+        HALT,${TMPDIR},100M,1K \
+        HALT,${DL_DIR},100M,1K \
+        HALT,${SSTATE_DIR},100M,1K \
+        HALT,/tmp,10M,1K"
   oe-layer-priority: |
     BBFILE_PRIORITY_openembedded-layer = "4"

@@ -17,6 +17,7 @@ DISTRO_FEATURES = " \
     systemd \
     usbgadget \
     usbhost \
+    tpm \
     virtualization \
 "
 
@@ -26,4 +27,4 @@ VIRTUAL-RUNTIME_initscripts = ""
 VIRTUAL-RUNTIME_syslog = ""
 DISTRO_FEATURES_BACKFILL_CONSIDERED += "sysvinit"
 
-PREFERRED_VERSION_linux-yocto ?= "4.19%"
+PREFERRED_VERSION_linux-yocto ?= "5.10%"

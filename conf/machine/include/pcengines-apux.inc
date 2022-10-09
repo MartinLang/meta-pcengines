@@ -1,8 +1,5 @@
 PREFERRED_PROVIDER_virtual/kernel ?= "linux-yocto"
 
-# provides gcc tune for Family 16h
-require conf/machine/include/tune-dbft3b.inc
-
 MULTILIBS ?= ""
 require conf/multilib.conf
 
@@ -11,17 +8,15 @@ SERIAL_CONSOLES = "115200;ttyUSB0"
 KERNEL_SERIAL_CONSOLE ??= "console=ttyS0,115200n8"
 APPEND += "${KERNEL_SERIAL_CONSOLE}"
 
-MACHINEOVERRIDES =. "amd:amdx86:pcengines-apux:"
 
-# Metadata used by CodeBench for the ADE
-ADE_CB_CPU = "general.cpu.jaguar"
+MACHINEOVERRIDES =. "amd:amdx86:pcengines-apux:"
 
 XSERVER ?= "${XSERVER_X86_BASE} \
             ${XSERVER_X86_EXT} \
             ${XSERVER_X86_FBDEV} \
            "
 
-PREFERRED_VERSION_linux-yocto = "4.19%"
+PREFERRED_VERSION_linux-yocto = "5.10%"
 
 MACHINE_FEATURES += " \
     rtc \
@@ -46,12 +41,12 @@ MACHINE_EXTRA_RRECOMMENDS += " \
 # NOTE: > Executing update_gio_module_cache intercept ...
 # NOTE: Exit code 132. Output:
 # Illegal instruction (core dumped)
-MACHINE_FEATURES_remove = "qemu-usermode"
+MACHINE_FEATURES:remove = "qemu-usermode"
 
 APPEND_ADDITIONAL ??= ""
 APPEND += "${APPEND_ADDITIONAL}"
 
-IMAGE_FSTYPES += "ext4"
+IMAGE_FSTYPES += "ext4 hddimg"
 
 IMAGE_OVERHEAD_FACTOR = "1.1"
 
@@ -62,7 +57,7 @@ KERNEL_MODULE_AUTOLOAD_pce-xen += " \
     xen_wdt \
     xen-gntdev \
     xen-gntalloc \
-    en-acpi-processor \
+    xen-acpi-processor \
     xen-pciback \
     xen-blkback \
 "
