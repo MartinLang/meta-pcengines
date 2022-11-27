@@ -15,7 +15,6 @@ KERNEL_FEATURES:append:pcengines-apux = " \
 "
 
 # disable graphics and Intel CPU/GPU support
-# enable realtek gagabit ethernet
 SRC_URI:append:pcengines-apux = " file://disable-graphics.cfg"
 
 KERNEL_FEATURES:remove:pcengines-apux = " \
