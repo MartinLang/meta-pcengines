@@ -9,7 +9,7 @@ KERNEL_SERIAL_CONSOLE ??= "console=ttyS0,115200n8"
 APPEND += "${KERNEL_SERIAL_CONSOLE}"
 
 
-MACHINEOVERRIDES =. "amd:amdx86:pcengines-apux:"
+MACHINEOVERRIDES =. "amd:amdx86:pcengines-apu${APU_VERSION}:"
 
 XSERVER ?= "${XSERVER_X86_BASE} \
             ${XSERVER_X86_EXT} \

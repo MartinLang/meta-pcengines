@@ -2,6 +2,9 @@ require recipes-extended/images/xen-image-minimal.bb
 
 IMAGE_INSTALL:append = " \
   seabios \
+  lvm2 \
+  parted \
+  nano \
   "
 
 build_syslinux_cfg () {
