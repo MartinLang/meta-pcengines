@@ -5,6 +5,8 @@ IMAGE_INSTALL:append = " \
   lvm2 \
   parted \
   nano \
+  e2fsprogs-mke2fs \
+  debootstrap \
   "
 
 build_syslinux_cfg () {
