@@ -6,8 +6,8 @@ repos:
 
   poky:
     url: https://git.yoctoproject.org/git/poky
-    # kirkstone-4.0.4
-    refspec: d64bef1c7d713b92a51228e5ade945835e5a94a4
+    # kirkstone-4.0.6
+    refspec: c4e08719a782fd4119eaf643907b80cebf57f88f
     layers:
       meta:
       meta-poky:
@@ -16,7 +16,7 @@ repos:
   meta-openembedded:
     url: http://git.openembedded.org/meta-openembedded
     # kirkstone
-    refspec: 05dcac98473402d87e0af73bbc2c5a6a840abe93
+    refspec: 1f31570d0795da90083d1dbf28127c90908e30ee
     layers:
       meta-oe:
       meta-networking:
@@ -26,7 +26,7 @@ repos:
   meta-virtualization:
     url: https://git.yoctoproject.org/git/meta-virtualization
     # kirkstone
-    refspec: 9482648daf0bb42ff3475e7892542cf99f3b8d48
+    refspec: 9a94fa2ad76990b0eca40837a98aaf4cd83a7248
 
   meta-security:
     url: https://git.yoctoproject.org/git/meta-security
