@@ -1,6 +1,5 @@
 [Match]
-Name=en*
-KernelCommandLine=!nfsroot
+Name=br0
 
 [Network]
 DHCP=v4

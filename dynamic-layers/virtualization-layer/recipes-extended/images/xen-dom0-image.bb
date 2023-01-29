@@ -5,6 +5,9 @@ IMAGE_INSTALL:append = " \
   lvm2 \
   parted \
   nano \
+  e2fsprogs-mke2fs \
+  debootstrap \
+  xen-tools-pygrub \
   "
 
 build_syslinux_cfg () {
