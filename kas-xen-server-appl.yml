@@ -6,4 +6,4 @@ header:
 distro: pce-xen
 machine: pcengines-apu
 target:
-  - mlg-xen-appl-image
+  - xen-server-appl-image
