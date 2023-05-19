@@ -17,7 +17,7 @@ repos:
     url: http://git.openembedded.org/meta-openembedded
     # kirkstone
     refspec: 9e539aaed608a03b1128a7361426703d8f9ba705
-      layers:
+    layers:
       meta-oe:
       meta-networking:
       meta-filesystems:

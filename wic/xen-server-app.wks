@@ -1,0 +1,15 @@
+# short-description: Create a 'pcbios' direct disk image with Xen hypervisor and bootloader config + additional LVM volume for VMs
+# long-description: Creates a partitioned legacy BIOS disk image to boot Xen
+# with a bootloader config that the user can directly dd to boot media.
+# Boot files are located on the first vfat partition.
+# Additional LVM PV is used for VMs
+
+part /boot --source bootimg-biosxen --ondisk sda --label boot --active --align 1024
+
+# For the main partition, it can be useful to add additional space for VMs;
+# eg. increase partition size by appending: --size 10G
+part / --source rootfs --ondisk sda --use-uuid --fstype=ext4 --label root --align 1024
+# LVM Partition (type= E6D6D379-F507-44C2-A23C-238F2A3DF928)
+part --size 4G --part-type=E6D6D379-F507-44C2-A23C-238F2A3DF928
+
+bootloader --configfile="directdisk-bootloader-xen.cfg"

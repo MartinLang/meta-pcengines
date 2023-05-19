@@ -10,6 +10,9 @@ IMAGE_INSTALL:append = " \
   xen-tools-pygrub \
   "
 
+
+WKS_FILE:x86-64 = "xen-server-app.wks"
+
 build_syslinux_cfg () {
 	echo "ALLOWOPTIONS 1" > ${SYSLINUX_CFG}
 	echo "DEFAULT boot" >> ${SYSLINUX_CFG}
