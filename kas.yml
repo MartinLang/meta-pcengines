@@ -6,8 +6,8 @@ repos:
 
   poky:
     url: https://git.yoctoproject.org/git/poky
-    # kirkstone-4.0.10
-    refspec: f53ab3a2ff206a130cdc843839dd0ea5ec4ad02f
+    # kirkstone
+    refspec: 1e6f147c686a91b9a5996f529e32ee1852f946b7
     layers:
       meta:
       meta-poky:
