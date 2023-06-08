@@ -10,6 +10,5 @@ part /boot --source bootimg-biosxen --ondisk sda --label boot --active --align 1
 # eg. increase partition size by appending: --size 10G
 part / --source rootfs --ondisk sda --use-uuid --fstype=ext4 --label root --align 1024
 # LVM Partition (type= E6D6D379-F507-44C2-A23C-238F2A3DF928)
-part --size 4G --part-type=E6D6D379-F507-44C2-A23C-238F2A3DF928
-
+part --size 4G 
 bootloader --configfile="directdisk-bootloader-xen.cfg"

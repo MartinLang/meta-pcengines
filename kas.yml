@@ -6,8 +6,8 @@ repos:
 
   poky:
     url: https://git.yoctoproject.org/git/poky
-    # kirkstone-4.0.9
-    refspec: 09def309f91929f47c6cce386016ccb777bd2cfc
+    # kirkstone-4.0.10
+    refspec: f53ab3a2ff206a130cdc843839dd0ea5ec4ad02f
     layers:
       meta:
       meta-poky:
@@ -26,7 +26,7 @@ repos:
   meta-virtualization:
     url: https://git.yoctoproject.org/git/meta-virtualization
     # kirkstone
-    refspec: dde0ff9eaa301ec5bd3daf667c7966cf55404d26
+    refspec: b3b3dbc67504e8cd498d6db202ddcf5a9dd26a9d
 
   meta-security:
     url: https://git.yoctoproject.org/git/meta-security
