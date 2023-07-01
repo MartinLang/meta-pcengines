@@ -11,7 +11,7 @@ IMAGE_INSTALL:append = " \
   "
 
 
-WKS_FILE:x86-64 = "xen-server-app.wks"
+# WKS_FILE:x86-64 = "xen-server-app.wks"
 
 build_syslinux_cfg () {
 	echo "ALLOWOPTIONS 1" > ${SYSLINUX_CFG}
