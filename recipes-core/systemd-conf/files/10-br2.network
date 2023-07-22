@@ -2,4 +2,4 @@
 Name=enp3s0
 
 [Network]
-Bridge=br2
+Bridge=xenbr2

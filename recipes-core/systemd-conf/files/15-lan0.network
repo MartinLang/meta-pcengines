@@ -1,0 +1,11 @@
+[Match]
+Name=xenbr0
+
+[Network]
+#DHCP=v4
+DNS = 192.168.0.1
+Address = 192.168.0.117/24
+Gateway = 192.168.0.1
+
+[DHCPv4]
+UseHostname=false

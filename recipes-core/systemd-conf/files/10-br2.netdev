@@ -1,5 +1,5 @@
 [NetDev]
-Name=br2
+Name=xenbr2
 Kind=bridge
 
 [Bridge]
