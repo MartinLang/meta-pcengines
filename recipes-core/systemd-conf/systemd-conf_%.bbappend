@@ -24,11 +24,12 @@ FILES:${PN} += " \
 
 do_install:append() {
     install -d ${D}${sysconfdir}/systemd/network
-    install -m 0644 ${WORKDIR}/br0.netdev ${D}${sysconfdir}/systemd/network
-    install -m 0644 ${WORKDIR}/br0.network ${D}${sysconfdir}/systemd/network
-    install -m 0644 ${WORKDIR}/br1.netdev ${D}${sysconfdir}/systemd/network
-    install -m 0644 ${WORKDIR}/br1.network ${D}${sysconfdir}/systemd/network
-    install -m 0644 ${WORKDIR}/br2.netdev ${D}${sysconfdir}/systemd/network
-    install -m 0644 ${WORKDIR}/br2.network ${D}${sysconfdir}/systemd/network
-    install -m 0644 ${WORKDIR}/lan0.network ${D}${sysconfdir}/systemd/network
+    install -m 0644 ${WORKDIR}/10-br0.netdev ${D}${sysconfdir}/systemd/network
+    install -m 0644 ${WORKDIR}/10-br0.network ${D}${sysconfdir}/systemd/network
+    install -m 0644 ${WORKDIR}/10-br1.netdev ${D}${sysconfdir}/systemd/network
+    install -m 0644 ${WORKDIR}/10-br1.network ${D}${sysconfdir}/systemd/network
+    install -m 0644 ${WORKDIR}/10-br2.netdev ${D}${sysconfdir}/systemd/network
+    install -m 0644 ${WORKDIR}/10-br2.network ${D}${sysconfdir}/systemd/network
+    install -m 0644 ${WORKDIR}/15-lan0.network ${D}${sysconfdir}/systemd/network
+    install -m 0644 ${WORKDIR}/15-lan1.network ${D}${sysconfdir}/systemd/network
 }
