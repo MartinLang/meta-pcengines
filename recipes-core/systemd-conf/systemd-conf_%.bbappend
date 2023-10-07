@@ -1,23 +1,25 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 SRC_URI += " \
-   file://br0.netdev \
-   file://br0.network \
-   file://br1.netdev \
-   file://br1.network \
-   file://br2.netdev \
-   file://br2.network \
-   file://lan0.network \
+   file://10-br0.netdev \
+   file://10-br0.network \
+   file://10-br1.netdev \
+   file://10-br1.network \
+   file://10-br2.netdev \
+   file://10-br2.network \
+   file://15-lan0.network \
+   file://15-lan1.network \
 "
 
 FILES:${PN} += " \
-    ${sysconfdir}/systemd/network/br0.netdev \
-    ${sysconfdir}/systemd/network/br0.network \
-    ${sysconfdir}/systemd/network/br1.netdev \
-    ${sysconfdir}/systemd/network/br1.network \
-    ${sysconfdir}/systemd/network/br2.netdev \
-    ${sysconfdir}/systemd/network/br2.network \
-    ${sysconfdir}/systemd/network/lan0.network \
+    ${sysconfdir}/systemd/network/10-br0.netdev \
+    ${sysconfdir}/systemd/network/10-br0.network \
+    ${sysconfdir}/systemd/network/10-br1.netdev \
+    ${sysconfdir}/systemd/network/10-br1.network \
+    ${sysconfdir}/systemd/network/10-br2.netdev \
+    ${sysconfdir}/systemd/network/10br2.network \
+    ${sysconfdir}/systemd/network/15-lan0.network \
+    ${sysconfdir}/systemd/network/15-lan1.network \
 "
 
 do_install:append() {
