@@ -6,6 +6,7 @@ IMAGE_INSTALL:append = " \
   parted \
   nano \
   e2fsprogs \
+  e2fsprogs-resize2fs \
   debootstrap \
   xen-tools-pygrub \
   "
