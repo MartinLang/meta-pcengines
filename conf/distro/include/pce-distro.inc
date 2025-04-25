@@ -15,6 +15,7 @@ DISTRO_FEATURES = " \
     nfs \
     pci \
     systemd \
+    usrmerge \
     usbgadget \
     usbhost \
     tpm \
