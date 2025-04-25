@@ -2,6 +2,7 @@ From a28d237526b3d4f04a15b8890b69e5b8378b206c Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Micha=C5=82=20Kotyla?= <michal.kotyla@3mdeb.com>
 Date: Wed, 13 Apr 2022 14:51:41 +0200
 Subject: [PATCH] Added root flag to grub-bios-setup
+Upstream-Status: Inappropriate [oe specific]
 
 ---
  include/grub/util/install.h |  4 ++--
