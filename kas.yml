@@ -6,8 +6,8 @@ repos:
 
   poky:
     url: https://git.yoctoproject.org/git/poky
-    # kirkstone
-    refspec: 91c3fc996ea1c4946295918e58d762a4bfcf7b3b
+    # Scarthgap
+    branch: scarthgap
     layers:
       meta:
       meta-poky:
@@ -15,8 +15,8 @@ repos:
 
   meta-openembedded:
     url: http://git.openembedded.org/meta-openembedded
-    # kirkstone 
-    refspec: 9c5541f7e18a1fac3b8dea71e1ebb8398d58e6ff
+    # Scarthgap
+    branch: scarthgap
     layers:
       meta-oe:
       meta-networking:
@@ -25,20 +25,20 @@ repos:
 
   meta-virtualization:
     url: https://git.yoctoproject.org/git/meta-virtualization
-    # kirkstone
-    refspec: 2d8b3cba8ff27c9ec2187a52b6a551fe1dcfaa07
+    # Scarthgap
+    branch: scarthgap
 
   meta-security:
     url: https://git.yoctoproject.org/git/meta-security
-    # kirkstone
-    refspec: 1a3e42cedbd94ca73be45800d0e902fec35d0f0f
+    # Scarthgap
+    branch: scarthgap
     layers:
       meta-tpm:
 
   meta-selinux:
     url: https://git.yoctoproject.org/git/meta-selinux
-    # kirkstone
-    refspec: a401f4b2816a0b41ce8d9351542658c721935bcd
+    # Scarthgap
+    branch: scarthgap
 
 bblayers_conf_header:
   standard: |
