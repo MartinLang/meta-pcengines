@@ -2,6 +2,14 @@
 Name=xenbr1
 
 [Network]
-DNS=192.168.1.1
-Address=192.168.1.9/24
-Gateway=192.168.1.1
+DHCP=yes
+#DNS=192.168.1.1
+#Address=192.168.1.9/24
+#Gateway=192.168.1.1
+
+[DHCPv4]
+UseHostname=false
+
+[DHCPv6]
+UseHostname=false
+
