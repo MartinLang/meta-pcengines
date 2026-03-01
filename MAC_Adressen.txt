@@ -1,0 +1,13 @@
+HW Adressen
+enp1s0: 00:0D:B9:33:00:44
+enp2s0: 00:0D:B9:33:00:45
+enp3s0: 00:0D:B9:33:00:46
+xenbr0: 
+xenbr1: F6:03:E0:8B:65:9D
+xenbr2: 1E:03:5B:48:86:9D
+
+Idefix.cfg
+vif: 00:16:3E:77:28:A0
+
+Polemix.cfg
+vif: 00:16:3E:7E:22:CE
